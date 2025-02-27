@@ -1,0 +1,27 @@
+.top{
+    background-color: #1e1e1e;   
+    display: flex;
+    flex-direction: row; 
+    gap: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    color: white;
+    align-items: center;
+}
+
+.clock{
+    margin-left:1rem;
+}
+.phone{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    gap: 0.25rem;
+}
+
+@media screen and (max-width: 1030px){
+    .top{
+        align-items: center;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,150 @@
+.footer {
+  background-color: #072448;
+  color: #fff;
+  padding-top: 1rem;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 3rem 1.5rem;
+}
+
+.footerRow {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footerCol {
+  flex-basis: 16%;
+  margin-bottom: 20px;
+}
+
+.footerCol h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.footerCol ul {
+  list-style-type: none;
+}
+
+.footerCol ul li {
+  margin-bottom: 10px;
+}
+
+.footerCol ul li a {
+  color: #bbb;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footerCol ul li a:hover {
+  color: #36b729;
+}
+
+.footerContact li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.footerContact li a {
+  color: #36b729;
+  text-decoration: none;
+}
+
+.footerContact li a:hover {
+  text-decoration: underline;
+}
+
+.footerBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #333;
+  padding: 15px 0;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.footerBottom .copyright {
+  color: #fff;
+}
+
+.footerLinks a {
+  color: #bbb;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+.footerLinks a:hover {
+  color: #36b729;
+}
+
+.socialMedia {
+  display: flex;
+  align-items: center;
+}
+
+.socialMedia span {
+  color: #fff;
+  margin-right: 10px;
+}
+
+.socialMedia a img {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+
+/*Responsive yapı için: */
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+  }
+
+  .form-row .form-group {
+    flex-basis: 100%;
+  }
+
+  .footerPow {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footerCol {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+
+  .footerBottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footerLinks {
+    margin-top: 10px;
+  }
+
+  .socialMedia {
+    margin-top: 10px;
+  }
+
+  .semih{
+    width: 100%;
+  }
+}
+
+.semih{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 96%;
+}
+

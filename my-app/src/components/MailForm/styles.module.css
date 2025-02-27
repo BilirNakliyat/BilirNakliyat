@@ -1,0 +1,167 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 55vh;
+    gap: 1rem; /* Personel ve form arasına boşluk ekledim */
+    /* background-color: rgb(26, 26, 148);  */
+    width: 65%;
+    margin: 0 auto;
+}
+.home{
+    display: flex;
+    flex-direction: row;
+    font-size: 0.8rem;
+    color: #16a085; /* Telefon numarası için renk */
+    align-items: center;
+    font-weight: 700;
+}
+.person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0 0 0;
+}
+
+.title1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600; /* Daha belirgin başlık */
+    color: #2c3e50; /* Başlık için koyu renk */
+    justify-self: center;
+}
+
+.name {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #34495e; /* İsim rengi */
+}
+
+.phone {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    color: #16a085; /* Telefon numarası için renk */
+    align-items: center;
+    font-weight: 700;
+}
+
+.icon {
+    margin-left: 0.5rem;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem; /* İçerik için biraz padding */
+    border: 1px solid #ecf0f1; /* Daha yumuşak sınır rengi */
+    border-radius: 10px;
+    width: 100%;
+    max-width: 30rem; /* Maksimum genişlik */
+    height: auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Yumuşak gölge */
+    background-color: #fff; /* Temiz beyaz arka plan */
+}
+.form{
+    margin: 1rem;
+}
+
+.title2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 600;
+    color: #2c3e50; /* Form başlığı için renk */
+}
+
+.label {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #34495e; /* Etiketler için renk */
+}
+
+.input {
+    font-size: 1rem;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 18rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input:focus {
+    border-color: #16a085; /* Odaklanınca renk değişimi */
+}
+
+.button {
+    font-size: 1.2rem;
+    padding: 0.75rem 2rem;
+    background-color: #16a085; /* Buton için renk */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #1abc9c; /* Hover efekt */
+}
+
+.button:disabled {
+    background-color: #95a5a6; /* Disabled durumda buton */
+    cursor: not-allowed;
+}
+@media screen and (max-width:768px){
+    .container {
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+    }
+    .title1 {
+        font-size: 2rem;
+        margin-top: 0.5rem;
+    }
+    .title2 {
+        font-size: 1.8rem;
+    }
+    .home{
+        margin: 0 1rem;
+    }
+    .input {
+        max-width: 100%;
+    }
+    .button {
+        padding: 0.75rem 1.5rem;
+    }
+
+}
+
+/*768px between 1200px */
+@media screen and (min-width:768px) and (max-width:1200px){
+    .container {
+        width: 80%;
+    }
+    .title1 {
+        font-size: 2rem;
+    }
+    .title2 {
+        font-size: 1.8rem;
+    }
+    .home{
+        margin: 0 1rem;
+    }
+    .input {
+        max-width: 100%;
+    }
+    .button {
+        padding: 0.75rem 1.5rem;
+    }
+}

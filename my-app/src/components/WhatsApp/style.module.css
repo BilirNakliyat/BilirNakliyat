@@ -1,0 +1,112 @@
+.whatsappContainer {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.whatsappPopup {
+  background: #fff;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  max-width: 90%;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: scale(1);
+}
+
+.whatsappPopupHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+  border-bottom: 2px solid #f1f1f1;
+}
+
+.headerText {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.whatsappClose {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #999;
+  transition: color 0.2s ease;
+}
+
+.whatsappClose:hover {
+  color: #f44336;
+}
+
+.whatsappPopupBody {
+  text-align: center;
+  
+}
+
+.whatsappMessage {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.whatsappLink {
+  background: #25d366;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.whatsappLink:hover {
+  background: #1ebe5d;
+}
+
+.whatsappLink:focus {
+  outline: none;
+}
+
+.whatsappLink:active {
+  transform: scale(0.98);
+}
+
+
+.whatsappButton {
+  background: #25d366;
+  color: white;
+  padding: 12px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, background 0.3s ease;
+  cursor: pointer;
+}
+
+.whatsappButton:hover {
+  background: #1ebe5d;
+}
+
+.whatsappButton.show {
+  transform: scale(1);
+}
+
+.whatsappButton.hide {
+  transform: scale(0);
+}
+
+.whatsappButton:hover {
+  transform: scale(1.1); /* Hover ile buton biraz büyür */
+}

@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main-info-boxes{
+    margin: 2rem 0;
+}

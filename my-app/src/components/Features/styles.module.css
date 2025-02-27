@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.feature {
+  flex: 1;
+  min-width: 280px;
+  max-width: 350px;
+}
+
+.feature h3 {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+
+.feature p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.icon {
+  margin: 0 auto;
+}
