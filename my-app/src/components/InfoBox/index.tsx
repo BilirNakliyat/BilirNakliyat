@@ -8,9 +8,13 @@ type InfoBoxProps = {
 const InfoBox: React.FC<InfoBoxProps> = ({ content }) => {
   return (
     <section className={styles.container}>
-      <p className={styles.text}>{content}</p>
+      {/* HTML içeriğini doğru şekilde render etmek için dangerouslySetInnerHTML kullanıyoruz */}
+      <div className={styles.text} dangerouslySetInnerHTML={{ __html: content }} />
+
       <div className={styles.buttonContainer}>
-        <button className={styles.callButton}>HEMEN ARA 📞</button>
+        <button className={styles.callButton}>
+          <a href="tel:05555555555">HEMEN ARA 📞</a>
+        </button>
       </div>
     </section>
   );

@@ -1,24 +1,46 @@
-.box{
+.box {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: 50%;
+    width: 60%;
     margin: 2rem auto;
-    padding: 1rem;
-    background-color: #f8f9fa;
-    border: 1px solid black;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #007bff;
 }
-.h2{
-    margin: 0;
+
+.h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    width: 100%;
+}
+
+.ul {
+    list-style: none;
     padding: 0;
-    font-size: 1.75rem;
+    margin: 0;
 }
-.ul{
-    list-style-type: unset;
-    padding:0 1rem ;
-}
-.li{
-    margin: 1rem 0;
+
+.li {
     font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #444;
+    padding-left: 20px;
+    position: relative;
+}
+
+.li::before {
+    content: "•"; /* Nokta simgesi */
+    color: #007bff; /* Mavi renk */
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
 }

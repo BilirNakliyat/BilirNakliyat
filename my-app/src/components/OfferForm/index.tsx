@@ -69,6 +69,13 @@ const OfferForm = () => {
             <option value="Şehir İçi Nakliye">Şehir İçi Nakliye</option>
             <option value="Şehirler Arası Nakliye">Şehirler Arası Nakliye</option>
             <option value="Parça Eşya Taşıma">Parça Eşya Taşıma</option>
+            <option value="Evden Eve Taşıma">Evden Eve Taşıma</option>
+            <option value="Hafriyat Taşıma">Hafriyat Taşıma</option>
+            <option value="Ofis Büro Taşıma">Ofis Büro Taşıma</option>
+            <option value="Parsiyel Yük Taşımacılığı">Parça Eşya Taşıma</option>
+            <option value="Ambar Taşıma">Ambar Taşıma</option>
+            <option value="Paketleme ve Depolama">Paketleme ve Depolama</option>
+            <option value="Asansörlü Taşıma">Parça Eşya Taşıma</option>
           </select>
         </label>
         <label className={styles.label}>

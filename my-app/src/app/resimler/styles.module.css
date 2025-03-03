@@ -1,0 +1,71 @@
+/* Grid Container */
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Esnek kolon düzeni */
+    gap: 24px; /* Resimler arasındaki boşluğu artırdık */
+    padding: 24px; /* Konteynerin etrafına iç boşluk */
+    justify-items: center; /* Resimleri ortalamak */
+    margin: 0 auto; /* Ortalamayı garantilemek */
+  }
+  
+  /* Her bir grid öğesi */
+  .gridItem {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px; /* Daha yuvarlak köşeler */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Güçlü bir gölge efekti */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover için geçiş ekledik */
+  }
+  
+  /* Resimlerin stilini belirliyoruz */
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Resimler kutuya uyum sağlasın */
+    border-radius: 16px; /* Resimlerin köşeleri de yuvarlanır */
+    transition: transform 0.3s ease; /* Resimler için hover animasyonu */
+  }
+  
+  /* Hover efekti: Resim ve kart büyür */
+  .gridItem:hover .image {
+    transform: scale(1.1); /* Resmi hafifçe büyütme */
+  }
+  
+  .gridItem:hover {
+    transform: translateY(-8px); /* Kart hover ile hafifçe yukarı kayar */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Hoverda daha belirgin bir gölge */
+  }
+  
+  /* Hover sırasında yazının görünmesini sağlamak */
+  .gridItem:hover .image::after {
+    opacity: 1;
+  }
+  
+  /* Resmin üzerine gelen açıklama metni */
+  .image::after {
+    content: " "; /* İçerik eklemek */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Metnin etrafında gölge */
+    opacity: 0; /* Başlangıçta görünmez */
+    transition: opacity 0.3s ease; /* Opaklık geçişi */
+  }
+  
+  /* Mobil Cihazlar İçin Responsive Tasarım */
+  @media screen and (max-width: 768px) {
+    .gridContainer {
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Mobilde kolon genişliği biraz daha daralır */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .gridContainer {
+      grid-template-columns: 1fr; /* Çok küçük ekranlarda tek kolon */
+    }
+  }
+  

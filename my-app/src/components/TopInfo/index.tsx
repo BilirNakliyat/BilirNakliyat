@@ -8,7 +8,7 @@ export default function TopInfo() {
     <div>
       <div className={styles.top}>
         <div className={styles.icon}>
-        <Link href="https://www.facebook.com">          
+        <Link href="/">          
             <Icon
               name="facebook"
               size="1.75rem"
@@ -18,7 +18,7 @@ export default function TopInfo() {
         </Link>
         </div>
         <div className={styles.icon}>
-        <Link href="https://www.instagram.com">
+        <Link href="https://www.instagram.com/bilir.nakliyatt/">
             <Icon
               name="instagram"
               size="1.75rem"
@@ -28,7 +28,7 @@ export default function TopInfo() {
         </Link>
         </div>
         <div className={styles.icon}>
-        <Link href="https://www.twitter.com">
+        <Link href="/">
             <Icon
               name="twitter"
               size="1.75rem"
@@ -42,9 +42,9 @@ export default function TopInfo() {
         </div>
         |
         <div className={styles.tel}>
-          <a href="tel:05555555555" className={styles.phone}>
+          <a href="tel:05317473909" className={styles.phone}>
             <span>
-              +90 (555) 555 5555{" "}
+              +90 (531) 747 3909{" "}
             </span>
               <Icon name="telephone" size="1.5rem" color="white" />
           </a>

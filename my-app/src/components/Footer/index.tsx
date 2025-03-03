@@ -11,21 +11,21 @@ function Footer() {
       <div className={styles.container}>
         <div className={styles.footerRow}>
           <div className={styles.footerCol}>
-            <h3>
+            {/* <h3> */}
               <Image
-                src="/logo.png"
+                src="/logo.svg"
                 alt="Bilir Nakliyat Logo"
-                width={150}
-                height={50}
+                width={100}
+                height={60}
               />
-            </h3>
+            {/* </h3> */}
             <ul className={styles.footerContact}>
               <li>Ömerli Mah. Hadımköy</li>
               <li>İstanbul Cad. No: 260 34555</li>
               <li>Arnavutköy İstanbul</li>
               <li>
-                <a href="mailto:info@bilirNakliyat.com.tr">
-                  info@bilirNakliyat.com.tr
+                <a href="mailto:bilirnakliyatsirketi@gmail.com">
+                bilirnakliyatsirketi@gmail.com
                 </a>
                 {/* maili ayarlamak gerek */}
               </li>
@@ -38,10 +38,10 @@ function Footer() {
             <h3>ÇÖZÜMLER</h3>
             <ul>
               <li>
-                <a href="#">Taşımacılık Hizmetleri</a>
+                <a href="/hizmetlerimiz">Taşımacılık Hizmetleri</a>
               </li>
               <li>
-                <a href="#">Lojistik Hizmetleri</a>
+                <a href="/hizmetlerimiz">Lojistik Hizmetleri</a>
               </li>
             </ul>
           </div>
@@ -61,15 +61,15 @@ function Footer() {
               <li>
                 <a href="#">Perakende</a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#">Kozmetik</a>
-              </li>
+              </li> */}
               <li>
                 <a href="#">Elektronik</a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#">Sağlık</a>
-              </li>
+              </li> */}
             </ul>
           </div>
 
@@ -95,10 +95,10 @@ function Footer() {
                 <Link href="/hakkimizda">Hakkımızda</Link>
               </li>
               <li>
-                <a href="#">Neden Biz</a>
+                <a href="/hakkimizda">Neden Biz</a>
               </li>
               <li>
-                <a href="#">Teklif Al</a>
+                <a href="/iletisim">Teklif Al</a>
               </li>
               <li>
                 <a href="#">Portal Girişi</a>
@@ -109,15 +109,15 @@ function Footer() {
           <div className={styles.footerCol}>
             <h3>İNSAN KAYNAKLARI</h3>
             <ul>
-              <li>
+              {/* <li>
                 <a href="#">Açık Pozisyonlar</a>
-              </li>
+              </li> */}
               <li>
                 <a href="#">İnsan Kaynakları Politikası</a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#">İşe Alım ve Oryantasyon</a>
-              </li>
+              </li> */}
               <li>
                 <a href="#">Yetenek Yönetimi</a>
               </li>
@@ -136,19 +136,19 @@ function Footer() {
           </div>
           <div className={styles.socialMedia}>
             <span>Bizi Takip Edin.</span>
-            <Link href="https://www.facebook.com/">
+            <Link href="/">
               <Icon name="facebook" size="2.25rem" />
             </Link>
-            <Link href="https://www.linkedin.com/">
+            <Link href="/">
               <Icon name="linkedin" size="2.25rem" />
             </Link>
-            <Link href="https://www.instagram.com/">
+            <Link href="https://www.instagram.com/bilir.nakliyatt/">
               <Icon name="instagram" size="2.25rem" />
             </Link>
-            <Link href="https://www.youtube.com/">
+            <Link href="/">
               <Icon name="youtube" size="2.25rem" />
             </Link>
-            <Link href="https://www.twitter.com/">
+            <Link href="/">
               <Icon name="twitter" size="2.25rem" />
             </Link>
           </div>

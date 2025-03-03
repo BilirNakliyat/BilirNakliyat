@@ -1,17 +1,20 @@
 import styles from "./styles.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 interface MainInfoBoxProps {
   title: string;
   content: string;
+  href: string;
+  src: string;
 }
 
-const MainInfoBox = ({title, content}: MainInfoBoxProps) => {
+const MainInfoBox = ({title, content, href, src}: MainInfoBoxProps) => {
   return (
     <div className={styles.container}>
       <div className={styles.imageWrapper}>
         <Image
-          src="/photo.jpg" // Public klasörüne taşı veya değiştir
+          src={src} // Public klasörüne taşı veya değiştir
           alt="Evden Eve Nakliyat"
           width={500} // Gerekirse değiştir
           height={250} // Gerekirse değiştir
@@ -23,7 +26,7 @@ const MainInfoBox = ({title, content}: MainInfoBoxProps) => {
         <p className={styles.p}>
           {content}
         </p>
-        <button className={styles.button}>Devamını Oku ›</button>
+        <button className={styles.button}><Link href={href}>Devamını Oku ›</Link></button>
       </div>
     </div>
   );

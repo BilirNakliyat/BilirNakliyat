@@ -7,7 +7,7 @@ export default function Kurumsal() {
       <div className={styles.box}>
         <Box
           title="Hakkımızda"
-          src="/photo.jpg"
+          src="/photos/photo-1.jpg"
           width={300}
           height={400}
           href="/hakkimizda"
@@ -16,7 +16,7 @@ export default function Kurumsal() {
       <div className={styles.box}>
         <Box
           title="Vizyonumuz"
-          src="/photo.jpg"
+          src="/photos/photo-3.jpg"
           width={300}
           height={400}
           href="/vizyonumuz"

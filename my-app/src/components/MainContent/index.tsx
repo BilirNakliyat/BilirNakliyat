@@ -3,20 +3,22 @@ import styles from "./styles.module.css";
 
 interface MainContentProps {
   title: string;
-  p: string;
+  htmlContent: string;
+  bg: string;  // Arka plan resmi URL'si
 }
 
-const MainContent = ({title, p}: MainContentProps) => {
+const MainContent = ({ title, htmlContent, bg }: MainContentProps) => {
   return (
     <main className={styles.main}>
       <div className={styles.box}>
         <div className={styles.imgBox}>
-            <div className={styles.img}></div>
+            {/* bg stilini style içinde uyguluyoruz */}
+            <div style={{ backgroundImage: `url(${bg})` }} className={styles.img}></div>
         </div>
         <div className={styles.contentBox}>
             <div className={styles.textBox}>
                 <h2 className={styles.h}>{title}</h2>
-                <p className={styles.p}>{p}</p>
+                <div className={styles.p} dangerouslySetInnerHTML={{ __html: htmlContent }} />
             </div>
         </div>
       </div>

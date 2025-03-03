@@ -39,9 +39,9 @@ const Navbar: React.FC = () => {
           <Link href="/" title="Bilir Nakliyat - Kurumsal Nakliye Hizmetleri" rel="home" legacyBehavior>
             <a>
               <Image
-                width={200}
+                width={100}
                 height={50}
-                src="/logo.png"
+                src="/logo.svg"
                 className={styles.headerLogoDark}
                 alt="Sel Nakliyat"
               />
@@ -86,40 +86,28 @@ const Navbar: React.FC = () => {
               </Link>
               <ul className={`${styles.subMenu} ${childIsOpen["hizmetlerimiz"] ? styles.show : ""}`}>
                 <li><Link href="/sehir-ici-nakliye" className={styles.a}>Şehir İçi Nakliye</Link></li>
-                {/* <li><Link href="/sehirlerarasi-nakliye" className={styles.a}>Şehirlerarası Nakliye</Link></li> */}
                 <li><Link href="/parca-esya-tasimaciligi" className={styles.a}>Parça Eşya Taşımacılığı</Link></li>
                 <li><Link href="/evden-eve-nakliyat" className={styles.a}>Evden Eve Nakliyat</Link></li>
                 <li><Link href="/hafriyat-tasimaciligi" className={styles.a}>Hafriyat Taşımacılığı</Link></li>
                 <li><Link href="/ofis-buro-tasimaciligi" className={styles.a}>Ofis Büro Taşımacılığı</Link></li>
                 <li><Link href="/parsiyel-yuk-tasimaciligi" className={styles.a}>Parsiyel Yük Taşımacılığı</Link></li>
+                <li><Link href="/ambar-tasimacilik" className={styles.a}>Ambar Taşımacılık Hizmetimiz</Link></li>
+                <li><Link href="/paketleme-ve-depolama" className={styles.a}>Paketleme ve Depolama Hizmetimiz</Link></li>
+                <li><Link href="/asansorlu-tasima" className={styles.a}>Asansörlü Taşıma Hizmetimiz</Link></li>
               </ul>
             </li>
             <li className={styles.menuItem}>
               <Link href="/istanbul-nakliye" className={styles.navTopLink} onClick={(event) => toggleChildMenu(event, 'istanbul-nakliye', '/istanbul-nakliye')}>
-                İstanbul Nakliye <Icon name="arrowDown" size="1.25rem" color="white" />
+                İstanbul Nakliye 
               </Link>
               <ul className={`${styles.subMenu} ${childIsOpen["istanbul-nakliye"] ? styles.show : ""}`}>
-                <li><Link href="/sehir-ici-nakliye" className={styles.a}>Şehir İçi Nakliye</Link></li>
-                {/* <li><Link href="/sehirlerarasi-nakliye" className={styles.a}>Şehirlerarası Nakliye</Link></li> */}
-                <li><Link href="/parca-esya-tasimaciligi" className={styles.a}>Parça Eşya Taşımacılığı</Link></li>
-                <li><Link href="/evden-eve-nakliyat" className={styles.a}>Evden Eve Nakliyat</Link></li>
-                <li><Link href="/hafriyat-tasimaciligi" className={styles.a}>Hafriyat Taşımacılığı</Link></li>
-                <li><Link href="/ofis-buro-tasimaciligi" className={styles.a}>Ofis Büro Taşımacılığı</Link></li>
-                <li><Link href="/parsiyel-yuk-tasimaciligi" className={styles.a}>Parsiyel Yük Taşımacılığı</Link></li>
               </ul>
             </li>
             <li className={styles.menuItem}>
               <Link href="/sehirlerarasi-nakliye" className={styles.navTopLink} onClick={(event) => toggleChildMenu(event, 'sehirlerarasi-nakliye', '/sehirlerarasi-nakliye')}>
-                Şehirlerarası Nakliye <Icon name="arrowDown" size="1.25rem" color="white" />
+                Şehirlerarası Nakliye 
               </Link>
               <ul className={`${styles.subMenu} ${childIsOpen["sehirlerarasi-nakliye"] ? styles.show : ""}`}>
-                <li><Link href="/sehir-ici-nakliye" className={styles.a}>Şehir İçi Nakliye</Link></li>
-                {/* <li><Link href="/sehirlerarasi-nakliye" className={styles.a}>Şehirlerarası Nakliye</Link></li> */}
-                <li><Link href="/parca-esya-tasimaciligi" className={styles.a}>Parça Eşya Taşımacılığı</Link></li>
-                <li><Link href="/evden-eve-nakliyat" className={styles.a}>Evden Eve Nakliyat</Link></li>
-                <li><Link href="/hafriyat-tasimaciligi" className={styles.a}>Hafriyat Taşımacılığı</Link></li>
-                <li><Link href="/ofis-buro-tasimaciligi" className={styles.a}>Ofis Büro Taşımacılığı</Link></li>
-                <li><Link href="/parsiyel-yuk-tasimaciligi" className={styles.a}>Parsiyel Yük Taşımacılığı</Link></li>
               </ul>
             </li>
             <li className={styles.menuItem}>

@@ -10,7 +10,7 @@ export async function POST(req: Request) {
     if (formData.fullName && formData.phone && formData.email && formData.request) {
       mailOptions = {
         from: `${formData.email}`,
-        to: "skopcal25@gmail.com", // Buraya mailin gideceği adresi yaz
+        to: "bilirnakliyatsirketi@gmail.com", // Buraya mailin gideceği adresi yaz
         subject: "Yeni Teklif Talebi",
         text: `
           Ad Soyad: ${formData.fullName}
@@ -26,7 +26,7 @@ export async function POST(req: Request) {
     else if (formData.name && formData.email && formData.message) {
       mailOptions = {
         from: `${formData.email}`,
-        to: "skopcal25@gmail.com", // Buraya mailin gideceği adresi yaz
+        to: "bilirnakliyatsirketi@gmail.com", // Buraya mailin gideceği adresi yaz
         subject: "Yeni Mail Formu Gönderimi",
         text: `
           Ad: ${formData.name}
@@ -44,8 +44,8 @@ export async function POST(req: Request) {
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: "skopcal25@gmail.com", // Kendi mailini gir
-        pass: "ggyk cguu aspk eczd", // Google'dan aldığın uygulama şifresini gir
+        user: "bilirnakliyatsirketi@gmail.com", // Kendi mailini gir
+        pass: "dgnz fldn upyj zoca", // Google'dan aldığın uygulama şifresini gir
       },
     });
 
