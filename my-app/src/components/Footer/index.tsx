@@ -10,27 +10,29 @@ function Footer() {
     <footer className={styles.footer}>
       <div className={styles.container}>
         <div className={styles.footerRow}>
-          <div className={styles.footerCol}>
+          <div className={styles.footerColq}>
             {/* <h3> */}
-              <Image
-                src="/logo.svg"
-                alt="Bilir Nakliyat Logo"
-                width={100}
-                height={60}
-              />
+            <Image
+              src="/logo.svg"
+              alt="Bilir Nakliyat Logo"
+              width={320}
+              height={0}
+            />
             {/* </h3> */}
             <ul className={styles.footerContact}>
-              <li>Ömerli Mah. Hadımköy</li>
-              <li>İstanbul Cad. No: 260 34555</li>
-              <li>Arnavutköy İstanbul</li>
+              <li>
+                Şahintepe Mahallesi Aşıkveysel Caddesi <br /> 2243 Sokak No:16{" "}
+              </li>
+              {/* <li>İstanbul Cad. No: 260 34555</li> */}
+              <li>BAŞAKŞEHİR/İSTANBUL</li>
               <li>
                 <a href="mailto:bilirnakliyatsirketi@gmail.com">
-                bilirnakliyatsirketi@gmail.com
+                  bilirnakliyatsirketi@gmail.com
                 </a>
                 {/* maili ayarlamak gerek */}
               </li>
-              <li>0850 288 81 81</li>
-              <li>0212 703 35 00</li>
+              <li>0531 747 39 90</li>
+              <li>0505 675 26 70</li>
             </ul>
           </div>
 

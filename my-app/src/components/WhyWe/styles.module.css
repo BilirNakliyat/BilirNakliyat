@@ -44,3 +44,9 @@
     left: 0;
     top: 0;
 }
+@media screen and (max-width: 768px) {
+    .box {
+        width: 96%;
+    }
+    
+}

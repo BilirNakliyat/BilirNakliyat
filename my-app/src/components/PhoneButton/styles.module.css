@@ -1,0 +1,90 @@
+.phoneContainer {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 10000;
+  }
+  
+  .phonePopup {
+    background: #fff;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    max-width: 90%;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: scale(1);
+  }
+  
+  .phonePopupHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #f1f1f1;
+  }
+  
+  .headerText {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .phoneClose {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #999;
+    transition: color 0.2s ease;
+  }
+  
+  .phoneClose:hover {
+    color: #f44336;
+  }
+  
+  .phonePopupBody {
+    text-align: center;
+  }
+  
+  .phoneMessage {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 12px;
+  }
+  
+  .phoneButton {
+    /* background: #ff0000; */
+    background: #007aff;
+    color: white;
+    padding: 12px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .phoneButton:hover {
+    background: #005ecb;
+  }
+  
+  .phoneButton.show {
+    transform: scale(1);
+  }
+  
+  .phoneButton.hide {
+    transform: scale(0);
+  }
+  
+  .phoneButton:hover {
+    transform: scale(1.1);
+  }
+  

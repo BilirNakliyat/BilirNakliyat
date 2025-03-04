@@ -8,7 +8,7 @@ export default function Iletisim() {
         adress="Örnek Mahallesi, Örnek Sokak No: 12"
         ilIlce="İstanbul, Kadıköy"
         person={[
-          ["Ahmet Yılmaz", "+90 532 123 45 67"],
+          ["Ahmet Murat Bilir", "+90 531 747 39 09"],
           // ["Mehmet Kaya", "+90 555 987 65 43"],
           // ["Mehmet Kaya", "+90 555 987 65 43"],
         ]}

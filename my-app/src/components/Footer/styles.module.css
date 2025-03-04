@@ -1,13 +1,13 @@
 .footer {
   background-color: #072448;
   color: #fff;
-  padding-top: 1rem;
+  /* padding-top: 1rem; */
 }
 
 .container{
   display: grid;
   grid-template-columns: 1fr;
-  padding: 3rem 1.5rem;
+  padding: 1rem 3rem;
 }
 
 .footerRow {
@@ -19,6 +19,7 @@
 .footerCol {
   flex-basis: 16%;
   margin-bottom: 20px;
+  margin-top: 3rem;
 }
 
 .footerCol h3 {

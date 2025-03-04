@@ -1,26 +1,25 @@
-"use client"
+"use client";
 import styles from "./styles.module.css";
-import Image from 'next/image';
-import { useState, useEffect } from 'react';
+import Image from "next/image";
+import { useState, useEffect } from "react";
 
 interface BannerProps {
   title: string;
-  src: string | string[];  // Tekil ya da dizi olarak görsel URL'leri
-  alt: string | string[];  // Tekil ya da dizi olarak görsel açıklamaları
+  src: string | string[];
+  alt: string | string[];
 }
 
 const Banner = ({ title, src, alt }: BannerProps) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const imagesSrc = Array.isArray(src) ? src : [src];  // Eğer tek bir görselse, onu diziye çevir
-  const imagesAlt = Array.isArray(alt) ? alt : [alt];  // Eğer tek bir açıklama varsa, onu diziye çevir
+  const imagesSrc = Array.isArray(src) ? src : [src];
+  const imagesAlt = Array.isArray(alt) ? alt : [alt];
 
-  // Görsel geçişi için useEffect hook'u
   useEffect(() => {
     if (imagesSrc.length > 1) {
       const interval = setInterval(() => {
         setCurrentImageIndex((prevIndex) => (prevIndex + 1) % imagesSrc.length);
-      }, 5000); // 5 saniyede bir görsel değişir
+      }, 5000); // 5 saniyede bir değişim
 
       return () => clearInterval(interval);
     }
@@ -28,18 +27,24 @@ const Banner = ({ title, src, alt }: BannerProps) => {
 
   return (
     <div className={styles.bannerContainer}>
-      {/* Banner Arkaplan Görseli */}
       <div className={styles.banner}>
-        <Image
-          src={imagesSrc[currentImageIndex]}
-          alt={imagesAlt[currentImageIndex]}
-          layout="fill"
-          objectFit="cover"
-          className={styles.backgroundImage}
-        />
+        {imagesSrc.map((image, index) => (
+          <div
+            key={index}
+            className={`${styles.imageWrapper} ${
+              index === currentImageIndex ? styles.active : ""
+            }`}
+          >
+            <Image
+              src={image}
+              alt={imagesAlt[index]}
+              layout="fill"
+              objectFit="cover"
+              className={styles.backgroundImage}
+            />
+          </div>
+        ))}
         <div className={styles.overlay}></div>
-
-        {/* Banner İçerik */}
         <div className={styles.textBox}>
           <h1 className={styles.title}>{title}</h1>
         </div>

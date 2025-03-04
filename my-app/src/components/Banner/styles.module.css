@@ -12,22 +12,34 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
-.backgroundImage {
+.imageWrapper {
   position: absolute;
   width: 100%;
   height: 100%;
-  object-fit: cover; 
   top: 0;
   left: 0;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out; /* Daha smooth bir geçiş için süre artırıldı */
+}
+
+.imageWrapper.active {
+  opacity: 1;
+}
+
+.backgroundImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .overlay {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(44, 44, 44, 0.64); /* Koyu renk şeffaf katman */
+  background-color: rgba(44, 44, 44, 0.64);
 }
 
 .textBox {
@@ -42,14 +54,14 @@
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   font-family: 'Arial', 'Helvetica', sans-serif;
   letter-spacing: 2px;
-  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.6), 0 1px 3px rgba(0, 0, 0, 0.3); /* Güçlü gölge efekti */
-  animation: fadeIn 2s ease-out; /* Animasyon efekti */
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.6), 0 1px 3px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 2s ease-out;
   transition: transform 0.3s ease-in-out;
 }
 
 @media screen and (max-width: 768px) {
   .banner {
-    height: 30rem; /* Yüksekliği isteğe bağlı ayarla */
+    height: 30rem;
   }
 
   .title {
