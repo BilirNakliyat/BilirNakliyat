@@ -5,6 +5,7 @@
     width: 60%;
     margin: 2rem auto;
     justify-items: center;
+    height: 50vh;
 }
 .box {
     display: flex;
