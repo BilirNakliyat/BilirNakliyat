@@ -64,8 +64,8 @@ export default function WhatsApp({ phoneNumber }: WhatsAppProps) {
         className={`${styles.whatsappButton} ${
           isIconOpen ? styles.show : styles.hide
         }`}
-        onMouseEnter={() => setIsOpen(true)} // Hover ile popup açılır
-        onMouseLeave={() => setIsOpen(false)} // Hoverdan çıkınca kapanır
+        // onMouseEnter={() => setIsOpen(true)} 
+        // onMouseLeave={() => setIsOpen(false)} 
       >
         <FaWhatsapp size={28} />
       </button>

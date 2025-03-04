@@ -44,8 +44,8 @@ export default function PhoneButton({ phoneNumber }: PhoneButtonProps) {
       <button
         onClick={handleClick}
         className={`${styles.phoneButton} ${isIconOpen ? styles.show : styles.hide}`}
-        onMouseEnter={() => setIsOpen(true)}
-        onMouseLeave={() => setIsOpen(false)}
+        // onMouseEnter={() => setIsOpen(true)}
+        // onMouseLeave={() => setIsOpen(false)}
       >
         <FaPhone size={26} />
       </button>
