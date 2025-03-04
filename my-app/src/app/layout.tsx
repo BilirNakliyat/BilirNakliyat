@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsApp from "@/components/WhatsApp";
 import PhoneButton from "@/components/PhoneButton";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -38,6 +39,7 @@ export default function RootLayout({
         <TopInfo />
         <Navbar />
         {children}
+        <SpeedInsights />
         <Footer />
       </body>
     </html>
