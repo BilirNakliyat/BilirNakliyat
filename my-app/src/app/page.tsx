@@ -34,8 +34,8 @@ export default function Home() {
       <OfferForm />
       <WhyWe />
       <IletisimSection
-        adress="Solaris Mahallesi, Luminova İlçesi, Auroria Sitesi, Nova Terra No:16"
-        ilIlce="ILCE/IL"
+        adress="Şahintepe Mahallesi Aşıkveysel Caddesi 2243 Sokak No:16 "
+        ilIlce="BAŞAKŞEHİR/İSTANBUL"
       />
     </div>
   );

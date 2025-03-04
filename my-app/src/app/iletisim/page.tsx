@@ -13,7 +13,7 @@ export default function Iletisim() {
           // ["Mehmet Kaya", "+90 555 987 65 43"],
         ]}
       />
-      <Map address="istanbul basaksehir altinsehir " />
+      <Map address="Şahintepe, 2243. Sk. No:16, 34494 Başakşehir/İstanbul, Türkiye" />
     </div>
   );
 }
