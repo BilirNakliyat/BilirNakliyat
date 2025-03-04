@@ -12,7 +12,7 @@ function IletisimSection({adress, ilIlce}: IletisimSectionProps) {
         <div className={styles.contactBox}>
             <div className={styles.contact}>BİZİMLE İLETİŞİME GEÇİN</div>
             <div className={styles.address}><p>{adress}<br/>{ilIlce}</p></div>
-            <div className={styles.callBtn}> <Icon name='telephone' size='1.75rem '></Icon><p className={styles.text}>İletisime Geçin</p></div>
+            <div className={styles.callBtn}> <Icon name='telephone' size='1.75rem '></Icon><p className={styles.text}><a  href="tel:05317473909">İletisime Geçin</a></p></div>
         </div>
     </div>
   )

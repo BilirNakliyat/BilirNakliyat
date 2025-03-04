@@ -13,7 +13,7 @@ const InfoBox: React.FC<InfoBoxProps> = ({ content }) => {
 
       <div className={styles.buttonContainer}>
         <button className={styles.callButton}>
-          <a href="tel:05555555555">HEMEN ARA 📞</a>
+          <a href="tel:05317473909">HEMEN ARA 📞</a>
         </button>
       </div>
     </section>
