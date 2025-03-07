@@ -6,9 +6,8 @@ export default function Iletisim() {
     <div>
       <MailForm
         adress={[
-          "Şahintepe Mahallesi Aşıkveysel Caddesi",
-          <br key="br1" />,
-          "2243 Sokak No:16",
+          <span key="address1">Şahintepe Mahallesi Aşıkveysel Caddesi</span>,
+          <span key="address2">2243 Sokak No:16</span>,
         ]}
         ilIlce="BAŞAKŞEHİR/İSTANBUL"
         person={[
