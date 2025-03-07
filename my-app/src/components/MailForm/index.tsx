@@ -1,12 +1,12 @@
-"use client";
-import { useState } from "react";
+"use client"
+import { JSX, useState } from "react";
 import styles from "./styles.module.css";
 import Icon from "@/components/Icon";
 
 interface MailFormProps {
-  adress: string;
+  adress: JSX.Element[]; 
   ilIlce: string;
-  person?: [name: string, phone: string][];
+  person?: [name: string, phone: string][]; 
 }
 
 function MailForm({ adress, ilIlce, person = [] }: MailFormProps) {
@@ -60,14 +60,15 @@ function MailForm({ adress, ilIlce, person = [] }: MailFormProps) {
             <div className={styles.icon}>
               <Icon name="home" color="green" size="2.5rem" />
             </div> 
-            {adress}<br/> {ilIlce}
+            {adress}
+            <br /> {ilIlce}
           </p>
         </div>
         {person.map(([name, phone], index) => (
           <div key={index} className={styles.person}>
             <p className={styles.name}>{name}</p>
             <p className={styles.phone}>
-              {phone} 
+             <a href="tel:05317473909">{phone}</a>  
               <div className={styles.icon}>
                 <Icon name="telephone" color="green" size="1.5rem" />
               </div>
@@ -104,3 +105,5 @@ function MailForm({ adress, ilIlce, person = [] }: MailFormProps) {
 }
 
 export default MailForm;
+
+

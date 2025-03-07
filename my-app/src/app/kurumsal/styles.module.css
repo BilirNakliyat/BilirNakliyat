@@ -1,44 +1,47 @@
-.container{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1rem;
-    width: 60%;
-    margin: 2rem auto;
-    justify-items: center;
-    height: 50vh;
+.main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Sayfanın tamamını kaplasın */
 }
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    width: 80%;
+    margin: auto;
+    justify-items: center;
+    flex: 1; /* İçeriği büyüt, footer'ı alta it */
+    margin-top: 3rem;
+}
+
 .box {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    /* background-color: #f9f9f9; */
     padding: 16px;
     border-radius: 8px;
-    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
     transition: transform 0.3s ease-in-out;
-  }
-  
-  .box:hover {
-    transform: scale(1.05);
-  }
-/* .img{
-    display: flex;
-    width: 100%;
-    height: 100%;
-    align-self: center;
-    justify-self: center;
-    justify-content: center;
-    align-items: center;
-} */ 
- /* BURAYI EKLEDIM AMA YINE DE ORTALANDI IMG DIYE BIR CLASSNAME YOK TSX DOSYASINDA */
+}
 
-@media screen and (max-width: 768px){
-    .container{
+.box:hover {
+    transform: scale(1.05);
+}
+
+/* Mobil görünüm */
+@media screen and (max-width: 768px) {
+    .container {
         grid-template-columns: 1fr;
         width: 90%;
-        margin: 1rem auto;
-        height: 170vh;
+        height: auto;
     }
-    
+}
+
+/* Tablet ve orta boyutlu ekranlar */
+@media screen and (max-width: 1310px) and (min-width: 768px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+        width: 90%;
+    }
 }

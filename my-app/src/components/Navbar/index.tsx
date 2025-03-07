@@ -1,9 +1,9 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import styles from "./styles.module.css";
 import Icon from "../Icon";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 import Image from "next/image";
 
 const Navbar: React.FC = () => {
@@ -12,6 +12,7 @@ const Navbar: React.FC = () => {
     {}
   );
   const router = useRouter();
+  const pathname = usePathname();
 
   const toggleChildMenu = (
     event: React.MouseEvent<HTMLAnchorElement>,
@@ -37,6 +38,10 @@ const Navbar: React.FC = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  useEffect(() => {
+    setIsOpen(false);
+  }, [pathname]);
 
   return (
     <header className={`${styles.headerMain} nav-dark`}>

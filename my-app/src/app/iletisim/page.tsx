@@ -5,11 +5,14 @@ export default function Iletisim() {
   return (
     <div>
       <MailForm
-        adress="Örnek Mahallesi, Örnek Sokak No: 12"
-        ilIlce="İstanbul, Kadıköy"
+        adress={[
+          "Şahintepe Mahallesi Aşıkveysel Caddesi",
+          <br key="br1" />,
+          "2243 Sokak No:16",
+        ]}
+        ilIlce="BAŞAKŞEHİR/İSTANBUL"
         person={[
-          ["Ahmet Murat Bilir", "+90 531 747 39 09"],
-          // ["Mehmet Kaya", "+90 555 987 65 43"],
+          ["Ahmet Murat Bilir", "0531 747 39 09"],
           // ["Mehmet Kaya", "+90 555 987 65 43"],
         ]}
       />
