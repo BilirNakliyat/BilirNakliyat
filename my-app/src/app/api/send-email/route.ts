@@ -22,11 +22,11 @@ export async function POST(req: Request) {
         `,
       };
     }
-    // Mail formu (MailForm) verisi kontrolü
+   
     else if (formData.name && formData.email && formData.message) {
       mailOptions = {
-        from: `${formData.email}`,
-        to: "bilirnakliyatsirketi@gmail.com", // Buraya mailin gideceği adresi yaz
+        // from: ,
+        to: `${formData.email}`, // Buraya mailin gideceği adresi yaz
         subject: "Yeni Mail Formu Gönderimi",
         text: `
           Ad: ${formData.name}
